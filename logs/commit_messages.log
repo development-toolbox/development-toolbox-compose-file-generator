@@ -1,0 +1,41 @@
+---------------------------------------------
+Commit Hash:   6d06afe7a9255e05091b53e9d694db7cd3b66208
+Branch:        main
+Author:        Johan Sörell
+Date:          2024-12-17 23:51:24 +0100
+Message:
+Initial commit: Set up project foundation with core files, testing, and git hook setup
+
+- Added README.md with project overview, usage instructions, and examples
+- Created compose-file-generator.py to generate Docker Compose files from running containers
+- Added requirements.txt to manage Python dependencies
+- Implemented start_test_container.py to start a test container for testing the script
+- Created test_compose_generator.py to validate the functionality of the script
+- Added git-hooks/post-commit script to log commit details and automatically commit the logs
+- Included setup-githooks.sh to install the git hooks and initialize the hooks directory
+- Created logs directory for storing commit message logs
+
+This commit sets up the necessary files and configurations for the project, including dependencies, testing, and Git hook automation.
+
+Changed Files:
+M	.gitignore
+A	README.md
+A	git-hooks/post-commit
+A	logs/.gitkeep
+A	setup-git-hooks.sh
+A	tests/start_test_container.py
+A	tests/test_compose_generator.py
+---------------------------------------------
+---------------------------------------------
+Commit Hash:   99ae99ec40b91528a0ad17d97b739b442007fc25
+Branch:        main
+Author:        Johan Sörell
+Date:          2024-12-17 23:54:25 +0100
+Message:
+Add commit messages log file and made script executable
+
+Changed Files:
+M	.gitignore
+M	tests/start_test_container.py
+M	tests/test_compose_generator.py
+---------------------------------------------
