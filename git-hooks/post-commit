@@ -12,6 +12,7 @@ mkdir -p "$LOG_DIR"
 
 # Get commit details
 COMMIT_HASH=$(git rev-parse HEAD)
+COMMIT_SHORT_HASH=$(git rev-parse --short=8 HEAD) 
 COMMIT_MESSAGE=$(git log -1 --pretty=format:"%B")  # Full commit message
 AUTHOR=$(git log -1 --pretty=format:"%an")
 DATE=$(git log -1 --pretty=format:"%ad" --date=iso)
@@ -36,6 +37,7 @@ fi
 # Create the individual commit file with full details
 {
     echo "# Commit Hash: $COMMIT_HASH"
+    echo "## Short hash: $COMMIT_SHORT_HASH"
     echo "### Author: $AUTHOR"
     echo "### Date: $DATE"
     echo "### Branch: $BRANCH_NAME"
@@ -51,7 +53,7 @@ echo "Commit message logged to $LOG_DIR/commit_$COMMIT_HASH.md"
 
 # Append a summary to the main commit log (commit_log.md)
 {
-    echo "### [$COMMIT_HASH: $COMMIT_MESSAGE]($LOG_DIR/commit_$COMMIT_HASH.md)"
+    echo "### [$COMMIT_SHORT_HASH: $COMMIT_MESSAGE]($LOG_DIR/commit_$COMMIT_HASH.md)"
     echo "- **Date**: $DATE"
     echo "- **Author**: $AUTHOR"
     echo "- **Branch**: $BRANCH_NAME"
