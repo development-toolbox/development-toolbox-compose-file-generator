@@ -75,7 +75,7 @@ def remove_container(container_name):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python3 generate_compose.py <container_name> <output_file>")
+        print("Usage: python3 compose-file-generator.py <container_name> <output_file>")
         sys.exit(1)
 
     container_name = sys.argv[1]
