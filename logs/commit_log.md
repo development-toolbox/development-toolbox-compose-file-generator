@@ -41,3 +41,8 @@
 - **Author**: Johan Sörell
 - **Branch**: main
 
+### [87b1a7c2: added the logs aswell!](/opt/my-private-repos/development-toolbox-compose-file-generator/logs/commit_87b1a7c2fb19e826761f34cb4bef4eede84ea855.md)
+- **Date**: 2025-01-08 17:06:32 +0100
+- **Author**: Johan Sörell
+- **Branch**: main
+
