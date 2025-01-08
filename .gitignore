@@ -398,3 +398,7 @@ FodyWeavers.xsd
 
 # Include the logs
 !logs/commit_messages.log
+
+# Exclude the git commit message file 'commit-message'
+# usage: git commit -F commit-message
+commit-message
