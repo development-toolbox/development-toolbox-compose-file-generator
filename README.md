@@ -198,4 +198,4 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 **Johan Sörell**  
 - [GitHub](https://github.com/J-SirL/)  
 - [LinkedIn](https://se.linkedin.com/in/johansorell)  
-- [Blog](insertmyblogname)  
+- [Blog](http://automationblueprint.site)  
