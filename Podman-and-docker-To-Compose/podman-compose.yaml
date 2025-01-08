@@ -1,0 +1,7 @@
+services:
+  mattermost-preview:
+    container_name: mattermost-preview
+    image: docker.io/mattermost/mattermost-preview:latest
+    ports:
+    - 8065:8065
+version: '3.9'

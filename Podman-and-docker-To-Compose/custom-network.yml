@@ -1,0 +1,22 @@
+services:
+  mattermost-preview:
+    container_name: mattermost-preview
+    environment:
+      DATABASE_URL: postgres://db:5432
+      GOSU_VERSION: '1.17'
+      LANG: en_US.utf8
+      MATTERMOST_ENV: production
+      PATH: /mm/mattermost/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/12/bin
+      PGDATA: /var/lib/postgresql/data
+      PG_MAJOR: '12'
+      PG_VERSION: 12.22-1.pgdg120+1
+      POSTGRES_DB: mattermost_test
+      POSTGRES_PASSWORD: mostest
+      POSTGRES_USER: mmuser
+    image: docker.io/mattermost/mattermost-preview
+    ports:
+    - 8065:8065
+    - 8065:8065
+    volumes:
+    - /var/lib/docker/volumes/10c51870cfd982b120a41675a2848b1b2c61fd09e7b961499bb221d3959738d4/_data:/mm/mattermost-data
+    - /var/lib/docker/volumes/66bf35c38b3b4b78c3af14625138e5d082ab21adcb55a5af5843b0f68eb4186f/_data:/var/lib/postgresql/data
