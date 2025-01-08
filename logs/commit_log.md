@@ -26,3 +26,8 @@
 - **Author**: Johan Sörell
 - **Branch**: main
 
+### [67b3b3de: added my blog url](/opt/my-private-repos/development-toolbox-compose-file-generator/logs/commit_67b3b3de1b1b8273dcc5506638ad1a4e7a79d7b0.md)
+- **Date**: 2025-01-08 15:28:27 +0100
+- **Author**: Johan Sörell
+- **Branch**: main
+
